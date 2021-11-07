@@ -1,0 +1,87 @@
+/* TASK 7 */
+.form {
+  border: 1px solid black;
+  width: 30rem;
+}
+
+.title {
+  background-color: red;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0.5rem 1rem;
+  padding: 1rem;
+  color: #fff;
+  text-align: center;
+}
+
+.name-input {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.name-input-style p {
+  margin-top: 0;
+}
+
+.name-input-style input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.address-input {
+  display: flex;
+  width: 30rem;
+  justify-content: center;
+}
+
+.address-input input {
+  width: 24.5rem;
+}
+
+.address-detail {
+  display: flex;
+  justify-content: space-around;
+}
+
+.address-detail input {
+  width: 5rem;
+}
+
+.subscription {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+.more-info {
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* =========================================== */
+
+/* TASK 8 */
+/* Outer most table styles */
+table {
+  border-collapse: collapse;
+}
+
+td,
+th {
+  border: 1px solid black;
+}
+
+/* 1st inner table */
+.fasting {
+  width: 12rem;
+}
+
+.second-col {
+  width: 1rem;
+}
+
+.third-col {
+  width: 1rem;
+}
+

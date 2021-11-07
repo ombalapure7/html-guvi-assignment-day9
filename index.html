@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 9 HTML 101</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Task 3</h1>
+    <h3><u>Design contact us from</u></h3>
+    <div>
+      <form>
+        <div>
+          <label for="name">Name</label>
+          <br />
+          <input type="text" id="name" required placeholder="Enter full name" />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <br />
+          <input type="email" id="email" required placeholder="Enter email" />
+        </div>
+        <div>
+          <label for="contact">Contact</label>
+          <br />
+          <input
+            type="text"
+            id="contact"
+            required
+            placeholder="Enter contact number"
+          />
+        </div>
+        <label for="comments">Contact</label>
+        <div>
+          <textarea
+            type="textarea"
+            id="comments"
+            required
+            placeholder="Enter comments"
+            rows="10"
+            cols="25"
+          ></textarea>
+        </div>
+        <br />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <hr />
+    <h1>Task 4</h1>
+    <h3><u>Unordered list</u></h3>
+    <ul>
+      <li>
+        Programming Languages
+        <ul>
+          <li>
+            Javascript
+            <ol type="a">
+              <li>Angular</li>
+              <li>React</li>
+              <li>Vue.js</li>
+            </ol>
+          </li>
+          <li>
+            Python
+            <ol type="a">
+              <li>Django Framework</li>
+              <li>Flask Framework</li>
+            </ol>
+          </li>
+          <li>
+            Java
+            <ol type="a">
+              <li>Spring</li>
+              <li>Maven</li>
+              <li>Hibernate</li>
+            </ol>
+          </li>
+        </ul>
+      </li>
+      <li>
+        Database
+        <ul>
+          <li>MySQL</li>
+          <li>MongoDB</li>
+          <li>Casandra</li>
+        </ul>
+      </li>
+    </ul>
+    <hr />
+    <h1>Task 5</h1>
+    <h3><u>Create an anchor tag and naviagate to a web page</u></h3>
+    <a href="https://google.com">Go To Google</a>
+    <hr />
+    <h1>Task 6</h1>
+    <h3>Form with grouped radio buttons</h3>
+    <form>
+      <div>
+        <label for="name">Name</label>
+        <br />
+        <input type="text" id="name" required placeholder="Enter full name" />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <br />
+        <input type="email" id="email" required placeholder="Enter email" />
+      </div>
+      <div>
+        <p>Source of income</p>
+        <input type="radio" name="income" id="salaried" />
+        <label for="income">Salaried</label>
+        <input type="radio" name="income" id="business" />
+        <label for="income">Business</label>
+      </div>
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+    <hr />
+    <h1>Task 7</h1>
+    <div class="form">
+      <form>
+        <p class="title">Yes! I want to subscribe to Mag-O-Zine</p>
+        <div class="name-input">
+          <div class="name-input-style"><input type="text"><p>First Name</p></div>
+          <div class="name-input-style"><input type="text"><p>Last Name</p></div>
+        </div>
+        <div class="address-input">
+          <div class="name-input-style"><input type="text"><p>Address</p></div>
+        </div>
+        <div class="address-detail">
+          <div class="name-input-style"><input type="text"><p>City</p></div>
+          <div class="name-input-style"><input type="text"><p>State</p></div>
+          <div class="name-input-style"><input type="text"><p>Zip</p></div>
+        </div>
+        <div class="subscription">
+          <div>Subscribe For:</div>
+          <div><input type="checkbox">1 year ($19.95)</div>
+          <div><input type="checkbox">2 year ($35.00)</div>
+        </div>
+        <div class="more-info">
+          <div><p>Send me more information about:</p></div>
+          <div>
+            <div><input type="checkbox">Computer-Zine</div>
+            <div><input type="checkbox">Fishing-Zine</div>
+            <div><input type="checkbox">Cat-O-Zine</div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <hr />
+    <h1>Task 8</h1>
+    <div>
+      <h3>Health Chart</h3>
+      <table>
+        <thead>
+          <th rowspan="2">State of Health</th>
+          <th colspan="2">
+            <table class="fasting">
+              <tr>
+                <td colspan="2" style="border: none">Fasting Value</td>
+              </tr>
+              <tr style="height: 6rem">
+                <td
+                  style="border-left: none; border-bottom: none; width: 6.5rem"
+                >
+                  Maximum
+                </td>
+                <td style="border-right: none; border-bottom: none">Minimum</td>
+              </tr>
+            </table>
+          </th>
+          <th>
+            <table>
+              <tr colspan="2">
+                <td
+                  style="
+                    padding: 1rem;
+                    border-left: none;
+                    border-right: none;
+                    border-bottom: none;
+                    border-top: none;
+                  "
+                >
+                  After Eating
+                </td>
+              </tr>
+              <tr>
+                <td
+                  style="
+                    border-left: none;
+                    border-right: none;
+                    border-bottom: none;
+                  "
+                >
+                  2 Hours After Eating
+                </td>
+              </tr>
+            </table>
+          </th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Healthy</td>
+            <td class="second-col">70</td>
+            <td class="second-col">100</td>
+            <td class="second-col">Less than 140</td>
+          </tr>
+          <tr>
+            <td>Pre-Diabetes</td>
+            <td class="third-col">101</td>
+            <td class="third-col">126</td>
+            <td class="third-col">140 to 200</td>
+          </tr>
+          <tr>
+            <td>Diabetes</td>
+            <td>More than 126</td>
+            <td>N/A</td>
+            <td>More than 126</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <hr />
+    <h1>Task 9</h1>
+    <form>
+      <div>
+        <label for="name">Name</label>
+        <br />
+        <input
+          type="text"
+          id="name"
+          required
+          placeholder="Enter full name"
+          value="Om Balapure"
+        />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <br />
+        <input
+          type="email"
+          id="email"
+          required
+          placeholder="Enter email"
+          value="ombalapure@gmail.com"
+        />
+      </div>
+      <div>
+        <p>Source of income</p>
+        <input type="radio" name="income" id="salaried" checked />
+        <label for="income">Salaried</label>
+        <input type="radio" name="income" id="business" />
+        <label for="income">Business</label>
+      </div>
+      <div>
+        <p>Favorite Foods</p>
+        <input type="checkbox" name="income" id="salaried" checked />
+        <label for="income">Chinese</label>
+        <input type="checkbox" name="income" id="business" />
+        <label for="income">Italian</label>
+        <input type="checkbox" name="income" id="business" />
+        <label for="income">Thai</label>
+        <input type="checkbox" name="income" id="business" checked />
+        <label for="income">Indian</label>
+      </div>
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+    <hr />
+    <h1>Task 10</h1>
+    <h3><u>Styling without CSS</u></h3>
+    <p>
+      <strong
+        ><i
+          ><font size="10px" color="green">HTML & CSS is awesome</font></i
+        ></strong
+      >
+    </p>
+    <hr />
+    <h1>Task 11</h1>
+    <h3><u>All input types in HTML</u></h3>
+    <form>
+      <div>
+        <div>Text: <input type="text" value="Text" /></div>
+        <br />
+        <div>Password: <input type="password" value="Password" /></div>
+        <br />
+        <div>Email: <input type="email" value="ombalapure@gmail.com" /></div>
+        <br />
+        <div>Number: <input type="number" value="100" /></div>
+      </div>
+      <div>
+        <p>Radio</p>
+        <input type="radio" />
+        <input type="radio" />
+      </div>
+      <div>
+        <p>Checkboxes</p>
+        <input type="checkbox" />
+        <input type="checkbox" />
+        <input type="checkbox" />
+        <input type="checkbox" />
+      </div>
+    </form>
+  </body>
+</html>
